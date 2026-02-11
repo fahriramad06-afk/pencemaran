@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Fahry Ramadhani</title>
+
+    <style>
+        /* ===== KODE NAVBAR ===== */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            height: 100%;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.8); 
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #38bdf8;
+            transform: scale(1.1);
+        }
+
+        /* ===== KODE CARD DENGAN ANIMASI GARIS MELINTAS ===== */
+        .card {
+            position: relative;
+            text-align: center;
+            padding: 50px 30px;
+            background: #111827;
+            border-radius: 30px;
+            
+            /* Shadow hitam pekat di luar */
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            
+            max-width: 350px;
+            width: 90%;
+            z-index: 10;
+            margin: 140px auto 50px auto;
+            transition: 0.4s ease;
+            overflow: hidden; /* Penting agar garis tidak keluar dari border */
+        }
+
+        /* Layer Animasi Garis Cahaya */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                transparent, 
+                transparent, 
+                transparent, 
+                #38bdf8, 
+                #ffffff,
+                transparent
+            );
+            animation: rotate-border 3s linear infinite;
+            z-index: -2; /* Di paling bawah layer card */
+        }
+
+        /* Layer Penutup Tengah (Masking) */
+        .card::after {
+            content: '';
+            position: absolute;
+            inset: 4px; /* Ketebalan garis border */
+            background: #111827;
+            border-radius: 28px;
+            z-index: -1; /* Di atas garis, di bawah konten */
+        }
+
+        @keyframes rotate-border {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #38bdf8;
+            margin-bottom: 25px;
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 28px;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: #94a3b8;
+            margin-bottom: 25px;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 80%;
+            padding: 12px 0;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: 0.3s;
+            position: relative;
+            z-index: 20; 
+        }
+
+        .btn-hello {
+            background-color: #38bdf8;
+            color: #0f172a;
+        }
+
+        .btn-bio {
+            background: linear-gradient(to right, #818cf8, #38bdf8);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        /* ===== CSS UNTUK ANIMASI EMOJI (TAMBAHAN) ===== */
+        .hand-emoji {
+            position: fixed; /* Fixed agar tidak merusak layout dan bisa menutupi layar */
+            pointer-events: none; /* Biar tidak bisa diklik */
+            z-index: 9999;
+            font-size: 2rem;
+            user-select: none;
+            animation: fly-out 1.5s ease-out forwards;
+        }
+
+        @keyframes fly-out {
+            0% {
+                transform: translate(-50%, -50%) scale(0) rotate(0deg);
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1.2) rotate(20deg);
+            }
+            100% {
+                /* Bergerak sesuai koordinat yang dikirim dari JS */
+                transform: translate(calc(-50% + var(--tw-x)), calc(-50% + var(--tw-y))) rotate(var(--tw-rot));
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="card" id="profileCard">
+        <img src="c:\Users\fahry\Downloads\WhatsApp Image 2026-02-11 at 00.38.02.jpeg" alt="Fahry Ramadhani" class="profile-img">
+        <h1>Fahry Ramadhani</h1>
+        <p>Creative Developer | Tech Enthusiast</p>
+        
+        <div class="btn-container">
+            <button class="btn btn-hello" onclick="sayHello(event)">Say Hello! 👋</button>
+            <a href="biodata.html" class="btn btn-bio">Biodata Singkat 📄</a>
+        </div>
+    </div>
+
+ <script>
+        function sayHello(event) {
+            const emojis = ['👋', '😁', '👋', '✨']; 
+            const handCount = 30; // Ditambah biar lebih rame menuhin layar
+
+            for (let i = 0; i < handCount; i++) {
+                const hand = document.createElement('div');
+                // Random antara tangan atau muka senyum
+                hand.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+                hand.className = 'hand-emoji';
+                
+                // Menggunakan event click untuk posisi awal yang akurat di tengah tombol
+                const startX = event.clientX;
+                const startY = event.clientY;
+
+                hand.style.left = startX + 'px';
+                hand.style.top = startY + 'px';
+
+                // Arah acak 360 derajat
+                const angle = Math.random() * Math.PI * 2;
+                // Jarak sebar menuhin layar (lebih jauh)
+                const distance = 100 + Math.random() * 400; 
+
+                // Set property untuk digunakan di CSS Animation
+                hand.style.setProperty('--tw-x', Math.cos(angle) * distance + 'px');
+                hand.style.setProperty('--tw-y', Math.sin(angle) * distance + 'px');
+                hand.style.setProperty('--tw-rot', (Math.random() * 360) + 'deg');
+
+                document.body.appendChild(hand);
+
+                setTimeout(() => {
+                    hand.remove();
+                }, 1500);
+            }
+        }
+    </script>
+
+</body>
+</html>

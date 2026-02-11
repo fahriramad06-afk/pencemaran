@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencemaran Air</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            background: rgba(33, 150, 243, 0.3);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background: rgba(255,255,255,0.1);
+            box-shadow: 0 0 15px rgba(255,255,255,0.6);
+            transform: scale(1.1);
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 90px;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            text-align: center;
+        }
+
+        h1 {
+            border-bottom: 2px solid #2196f3;
+            padding-bottom: 10px;
+            color: #2196f3;
+        }
+
+        p {
+            line-height: 1.7;
+            text-align: justify;
+            font-size: 14.5px;
+        }
+
+        .news-img {
+            width: 100%;
+            border-radius: 15px;
+            margin: 25px 0 0;
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
+        }
+
+        a.box-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 28px;
+            border: 2px solid #2196f3;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.4s ease;
+        }
+
+        a.box-link:hover {
+            box-shadow: 0 0 20px rgba(33,150,243,0.9);
+            transform: translateY(-3px);
+        }
+
+        .author-info {
+            text-align: left;
+            font-size: 13.5px;
+            color: #d0e7ff;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .author-info span {
+            color: #2196f3;
+            font-weight: bold;
+        }
+
+        .section-title {
+            text-align: left;
+            color: #2196f3;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 25px 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <div class="wrapper">
+        <div class="box">
+            <h1>Pencemaran Air</h1>
+
+            <div class="author-info">
+                <div><span>Nama Penulis</span> : Fahry Ramadhani</div>
+                <div><span>Lokasi</span> : Cicurug</div>
+                <div><span>Tanggal</span> : 10-02-2026</div>
+            </div>
+
+            <div class="section-title">Pendahuluan</div>
+            <p>
+                Pencemaran air adalah suatu kondisi di mana air mengalami penurunan kualitas akibat masuknya
+                zat-zat pencemar seperti limbah cair, bahan kimia, sampah, dan mikroorganisme berbahaya
+                yang berasal dari aktivitas manusia. Air yang tercemar tidak hanya berubah warna dan bau,
+                tetapi juga menjadi tidak layak digunakan serta berbahaya bagi kesehatan makhluk hidup.
+            </p>
+
+            <p>
+                Air merupakan sumber daya alam yang sangat penting bagi kehidupan manusia, hewan, dan tumbuhan.
+                Di wilayah tersebut, air dimanfaatkan untuk berbagai kebutuhan seperti minum, mandi, mencuci,
+                pertanian, serta aktivitas ekonomi masyarakat. Namun, seiring meningkatnya jumlah penduduk
+                dan aktivitas manusia, kualitas air di beberapa daerah mengalami penurunan yang cukup signifikan
+                akibat pencemaran yang terus terjadi.
+            </p>
+
+            <div class="section-title">Pembahasan</div>
+            <p>
+                Pencemaran air di berbagai daerah banyak disebabkan oleh pembuangan limbah secara sembarangan.
+                Limbah tersebut berasal dari kegiatan industri, fasilitas pengolahan limbah medis,
+                serta aktivitas rumah tangga seperti penggunaan deterjen, pembuangan sampah plastik,
+                minyak bekas, dan sisa-sisa bahan makanan. Kurangnya kesadaran masyarakat terhadap kebersihan
+                lingkungan serta lemahnya pengawasan dari pihak terkait menjadi faktor utama yang
+                memperparah pencemaran air.
+            </p>
+
+            <img src="c:\Users\fahry\Downloads\WhatsApp Image 2026-02-11 at 10.32.08 (1).jpeg"
+                 alt="Pabrik pengolahan limbah medis disegel"
+                 class="news-img">
+
+            <p style="margin-top:0; font-size:12.5px; color:#cccccc; text-align:center; font-style:italic;">
+                Pabrik pengolahan limbah medis disegel setelah mencemari air warga (dok. DLH)
+            </p>
+
+            <div class="section-title">Dampak</div>
+            <p>
+                Dampak dari pencemaran air sangat dirasakan oleh masyarakat sekitar.
+                Air yang telah tercemar dapat menyebabkan berbagai masalah kesehatan,
+                seperti diare, penyakit kulit, gatal-gatal, keracunan, hingga gangguan pencernaan.
+                Selain berdampak pada manusia, pencemaran air juga merusak lingkungan perairan,
+                menyebabkan kematian ikan, rusaknya habitat biota air, serta menurunkan kualitas
+                ekosistem secara keseluruhan.
+            </p>
+
+            <div class="section-title">Solusi</div>
+            <p>
+                Untuk mengatasi permasalahan pencemaran air, diperlukan upaya bersama dari pemerintah,
+                pelaku industri, dan masyarakat. Pengelolaan limbah harus dilakukan secara bertanggung jawab
+                dan sesuai dengan standar lingkungan yang berlaku.
+            </p>
+
+            <div class="section-title">Ajakan</div>
+            <p>
+                Oleh karena itu, peran masyarakat sangat penting dalam mencegah pencemaran air.
+                Kebiasaan sederhana seperti tidak membuang sampah ke sungai, mengurangi penggunaan bahan kimia
+                berbahaya, serta mengelola limbah rumah tangga dengan baik dapat memberikan dampak positif.
+            </p>
+
+            <a href="index.html" class="box-link">⬅ Kembali ke Menu</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kepedulian Lingkungan</title>
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            background: rgba(33, 150, 243, 0.25);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255,255,255,0.15);
+            box-shadow: 0 0 15px rgba(255,255,255,0.6);
+            transform: scale(1.1);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            margin-top: 90px;
+            width: 700px;
+            max-width: 90%;
+            text-align: left;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #437ede;
+            padding-bottom: 10px;
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            opacity: 0.9;
+            text-align: justify;
+        }
+
+        .menu-link {
+            display: block;
+            margin: 18px auto;
+            padding: 14px;
+            width: 80%;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid rgba(67,126,222,0.8);
+            border-radius: 16px;
+            background: rgba(255,255,255,0.03);
+            backdrop-filter: blur(6px);
+            transition: all 0.3s ease;
+        }
+
+        .menu-link:hover {
+            background: rgba(67,126,222,0.25);
+            box-shadow: 0 0 18px rgba(67,126,222,0.6);
+            transform: translateY(-4px);
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                width: 850px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <div class="container">
+        <h1>Kepedulian Lingkungan</h1>
+
+        <p class="description">
+            Kepedulian terhadap lingkungan merupakan sikap sadar untuk menjaga, melestarikan,
+            serta melindungi lingkungan agar tetap bersih, sehat, dan seimbang. Lingkungan yang
+            terjaga dengan baik akan mendukung kehidupan manusia, hewan, dan tumbuhan secara
+            berkelanjutan. Namun, seiring meningkatnya aktivitas manusia, berbagai permasalahan
+            lingkungan seperti pencemaran air, tanah, dan udara semakin sering terjadi.
+        </p>
+
+        <p class="description">
+            Dampak dari pencemaran lingkungan sangat merugikan, mulai dari menurunnya kualitas
+            air bersih, rusaknya tanah yang tidak lagi subur, hingga pencemaran udara yang dapat
+            membahayakan kesehatan manusia. Oleh karena itu, diperlukan solusi nyata seperti
+            pengelolaan limbah yang baik, pengurangan emisi, serta peningkatan kesadaran
+            masyarakat dalam menjaga lingkungan.
+        </p>
+
+        <a href="air.html" class="menu-link">Pencemaran Air</a>
+        <a href="tanah.html" class="menu-link">Pencemaran Tanah</a>
+        <a href="udara.html" class="menu-link">Pencemaran Udara</a>
+
+        <!-- TAMBAHAN TEKS -->
+        <p style="text-align:center; margin-top:25px; opacity:0.8; font-style:italic;">
+            Pilih salah satu untuk melanjutkan!
+        </p>
+
+    </div>
+
+</body>
+</html>

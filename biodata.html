@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - Fahry Ramadhani</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top right, #1e293b, #0f172a);
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Efek Kaca Biru Muda */
+        .bio-card {
+            background: rgba(56, 189, 248, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            border-radius: 25px;
+            padding: 40px;
+            width: 85%;
+            max-width: 450px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 25px;
+            background: linear-gradient(to right, #38bdf8, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+        }
+
+        .info-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center; /* Sejajar tengah */
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .info-item:hover {
+            background: rgba(56, 189, 248, 0.2);
+            transform: scale(1.02);
+        }
+
+        /* Lebar label dibuat tetap supaya titik dua (:) sejajar vertikal */
+        .label {
+            font-weight: 700;
+            color: #38bdf8;
+            font-size: 13px;
+            text-transform: uppercase;
+            width: 110px; /* Jarak tetap supaya dekat tapi rapi */
+            flex-shrink: 0;
+        }
+
+        .value {
+            font-weight: 500;
+            color: #f8fafc;
+            position: relative;
+        }
+
+        .back-btn {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            color: #38bdf8;
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bio-card">
+        <h2>Biodata</h2>
+        
+        <div class="info-group">
+            <div class="info-item">
+                <span class="label">Nama</span>
+                <span class="value">: Fahry Ramadhani</span>
+            </div>
+            
+            <div class="info-item">
+                <span class="label">TTL</span>
+                <span class="value">: Bogor, 19-09-2007</span>
+            </div>
+            
+            <div class="info-item">
+                <span class="label">Sekolah</span>
+                <span class="value">: SMK INFORMATIKA CBI</span>
+            </div>
+            
+            <div class="info-item">
+                <span class="label">Umur</span>
+                <span class="value">: 18 Tahun</span>
+            </div>
+            
+            <div class="info-item">
+                <span class="label">Alamat</span>
+                <span class="value">: Kp. Cibeber Girang</span>
+            </div>
+            
+            <div class="info-item">
+                <span class="label">Kontak</span>
+                <span class="value">: 081291080258</span>
+            </div>
+        </div>
+
+        <a href="about.html" class="back-btn">← Back to Profile</a>
+    </div>
+
+</body>
+</html>

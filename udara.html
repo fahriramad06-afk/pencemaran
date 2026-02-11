@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencemaran Udara</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1502303756781-2072c8b38b9f');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(255,255,255,0.25);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+            z-index: 999;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 10px 26px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background: rgba(255,255,255,0.15);
+            box-shadow: 0 0 18px rgba(255,255,255,0.45);
+            transform: translateY(-2px);
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 90px;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(12px);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            text-align: center;
+        }
+
+        h1 {
+            border-bottom: 2px solid #cfd8dc;
+            padding-bottom: 10px;
+            color: #eceff1;
+        }
+
+        h2 {
+            text-align: left;
+            margin-top: 30px;
+            color: #e0e0e0;
+        }
+
+        p {
+            line-height: 1.7;
+            text-align: justify;
+            font-size: 14.5px;
+            color: #f5f5f5;
+        }
+
+        .news-img {
+            width: 100%;
+            border-radius: 15px;
+            margin: 25px 0 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
+        }
+
+        a.btn-back {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 28px;
+            border: 2px solid #cfd8dc;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.4s ease;
+        }
+
+        a.btn-back:hover {
+            box-shadow: 0 0 20px rgba(200,200,200,0.8);
+            transform: translateY(-3px);
+        }
+
+        .author-info {
+            text-align: left;
+            font-size: 13.5px;
+            color: #d0e7ff;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .author-info span {
+            color: #90caf9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+</div>
+
+<div class="wrapper">
+    <div class="box">
+
+        <h1>Pencemaran Udara</h1>
+
+        <div class="author-info">
+            <div><span>Nama Penulis</span> : Fahry Ramadhani</div>
+            <div><span>Lokasi</span> : Cicurug</div>
+            <div><span>Tanggal</span> : 10-02-2026</div>
+        </div>
+
+        <h2>Pendahuluan</h2>
+        <p>
+            Udara merupakan kebutuhan utama bagi semua makhluk hidup. Kualitas udara yang
+            baik sangat berpengaruh terhadap kesehatan manusia dan kelangsungan lingkungan.
+            Namun, seiring berkembangnya industri, transportasi, dan aktivitas manusia,
+            pencemaran udara menjadi permasalahan serius yang semakin sulit dihindari.
+        </p>
+
+        <p>
+            Pencemaran udara sering kali terjadi tanpa disadari karena dampaknya tidak selalu
+            terlihat secara langsung. Padahal, udara yang tercemar dapat menimbulkan berbagai
+            gangguan kesehatan serta merusak keseimbangan lingkungan. Oleh karena itu,
+            kesadaran untuk menjaga kebersihan udara sangat penting demi kehidupan yang lebih
+            sehat.
+        </p>
+
+        <h2>Pembahasan</h2>
+        <p>
+            Pencemaran udara disebabkan oleh masuknya zat berbahaya ke atmosfer, seperti asap
+            kendaraan bermotor, asap pabrik, pembakaran sampah, serta penggunaan bahan bakar
+            fosil. Gas beracun seperti karbon monoksida, sulfur dioksida, dan nitrogen oksida
+            dapat mencemari udara dan membahayakan kesehatan manusia.
+        </p>
+
+        <p>
+            Di kota-kota besar seperti <strong>Jakarta dan Bekasi</strong>, pencemaran udara
+            sering kali dipicu oleh tingginya jumlah kendaraan dan aktivitas industri.
+            Kurangnya ruang terbuka hijau juga memperparah kondisi ini, sehingga kualitas
+            udara menurun dan berdampak langsung pada masyarakat.
+        </p>
+
+        <img src="c:\Users\fahry\Downloads\WhatsApp Image 2026-02-11 at 10.31.04.jpeg"
+             alt="Pencemaran udara akibat asap kendaraan"
+             class="news-img">
+
+        <h2>Dampak Pencemaran Udara</h2>
+        <p>
+            Dampak pencemaran udara sangat berbahaya bagi kesehatan manusia. Udara yang tercemar
+            dapat menyebabkan gangguan pernapasan, asma, iritasi mata, hingga penyakit paru-paru
+            kronis. Selain itu, pencemaran udara juga berkontribusi terhadap pemanasan global
+            dan perubahan iklim.
+        </p>
+
+        <p>
+            Jika tidak ditangani dengan serius, pencemaran udara akan terus meningkat dan
+            memperburuk kualitas hidup manusia. Oleh sebab itu, diperlukan upaya bersama
+            untuk menjaga kebersihan udara agar tetap sehat dan layak dihirup.
+        </p>
+
+        <h2>Solusi</h2>
+        <p>
+            Untuk mengurangi pencemaran udara, masyarakat dapat mulai menggunakan transportasi
+            ramah lingkungan, mengurangi penggunaan kendaraan pribadi, serta tidak membakar
+            sampah sembarangan. Pemerintah juga memiliki peran penting dalam mengontrol emisi
+            industri dan memperbanyak ruang terbuka hijau.
+        </p>
+
+        <p>
+            Dengan langkah kecil yang dilakukan secara bersama-sama, kualitas udara dapat
+            ditingkatkan. Menjaga udara berarti menjaga kesehatan dan masa depan generasi
+            mendatang.
+        </p>
+
+        <a href="index.html" class="btn-back">⬅ Kembali ke Menu</a>
+
+    </div>
+</div>
+
+</body>
+</html>

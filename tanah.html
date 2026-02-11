@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencemaran Tanah</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(255,255,255,0.25);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+            z-index: 999;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 10px 26px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background: rgba(255,255,255,0.15);
+            box-shadow: 0 0 18px rgba(255,255,255,0.45);
+            transform: translateY(-2px);
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 90px;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            text-align: center;
+        }
+
+        h1 {
+            border-bottom: 2px solid #66bb6a;
+            padding-bottom: 10px;
+            color: #81c784;
+        }
+
+        h2 {
+            text-align: left;
+            margin-top: 30px;
+            color: #81c784;
+        }
+
+        p {
+            line-height: 1.7;
+            text-align: justify;
+            font-size: 14.5px;
+        }
+
+        .news-img {
+            width: 100%;
+            border-radius: 15px;
+            margin: 25px 0 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
+        }
+
+        a.btn-back {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 28px;
+            border: 2px solid #66bb6a;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.4s ease;
+        }
+
+        a.btn-back:hover {
+            box-shadow: 0 0 20px rgba(102,187,106,0.9);
+            transform: translateY(-3px);
+        }
+
+        /* TAMBAHAN IDENTITAS */
+        .author-info {
+            text-align: left;
+            font-size: 13.5px;
+            color: #d0e7ff;
+            margin: 15px 0 25px;
+            line-height: 1.8;
+        }
+
+        .author-info span {
+            color: #90caf9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+</div>
+
+<div class="wrapper">
+    <div class="box">
+        <h1>Pencemaran Tanah</h1>
+
+        <!-- IDENTITAS PENULIS -->
+        <div class="author-info">
+            <div><span>Nama Penulis</span> : Fahry Ramadhani</div>
+            <div><span>Lokasi</span> : Cicurug</div>
+            <div><span>Tanggal</span> : 11-02-2026</div>
+        </div>
+
+        <h2>Pendahuluan</h2>
+        <p>
+            Tanah merupakan salah satu komponen penting dalam kehidupan karena berperan sebagai
+            tempat tumbuh tanaman, penyaring air, serta penopang aktivitas manusia.
+        </p>
+
+        <!-- TAMBAHAN -->
+        <p>
+            Secara umum, pencemaran tanah dapat diartikan sebagai masuknya zat-zat berbahaya
+            ke dalam tanah sehingga menurunkan kualitas dan fungsi alami tanah tersebut.
+            Zat pencemar ini dapat berasal dari limbah industri, rumah tangga, pertanian,
+            maupun aktivitas manusia lainnya yang tidak memperhatikan kelestarian lingkungan.
+        </p>
+
+        <p>
+            Apabila pencemaran tanah dibiarkan terjadi secara terus-menerus, maka dampaknya
+            tidak hanya merusak lingkungan, tetapi juga mengancam kesehatan manusia dan
+            makhluk hidup lainnya. Oleh karena itu, pencemaran tanah merupakan masalah
+            lingkungan yang perlu mendapatkan perhatian serius.
+        </p>
+
+        <h2>Pembahasan</h2>
+        <p>
+            Pencemaran tanah umumnya disebabkan oleh kebiasaan manusia yang tidak ramah lingkungan.
+            Aktivitas industri, pertanian modern, dan rumah tangga memberikan kontribusi besar
+            terhadap menurunnya kualitas tanah.
+        </p>
+
+        <!-- TAMBAHAN -->
+        <p>
+            Limbah industri seperti bahan kimia beracun, logam berat, dan sisa produksi
+            sering kali dibuang tanpa pengolahan yang memadai. Zat-zat ini dapat bertahan
+            lama di dalam tanah dan sulit terurai secara alami, sehingga menyebabkan tanah
+            kehilangan kesuburannya.
+        </p>
+
+        <p>
+            Selain itu, penggunaan pestisida dan pupuk kimia secara berlebihan dalam sektor
+            pertanian juga memperparah pencemaran tanah. Bahan kimia tersebut tidak hanya
+            membunuh hama, tetapi juga merusak organisme tanah yang berperan penting dalam
+            menjaga kesuburan dan keseimbangan ekosistem.
+        </p>
+
+        <img src="c:\Users\fahry\Downloads\WhatsApp Image 2026-02-11 at 10.32.08.jpeg"
+             class="news-img">
+
+        <h2>Dampak Pencemaran Tanah</h2>
+        <p>
+            Dampak pencemaran tanah sangat merugikan bagi lingkungan dan manusia.
+        </p>
+
+        <!-- TAMBAHAN -->
+        <p>
+            Tanah yang tercemar akan menyebabkan tanaman sulit tumbuh dan menghasilkan
+            produk pertanian yang tidak berkualitas. Dalam jangka panjang, hal ini dapat
+            menurunkan ketahanan pangan serta merugikan petani secara ekonomi.
+        </p>
+
+        <p>
+            Dari sisi kesehatan, zat berbahaya yang terkandung dalam tanah dapat masuk ke
+            dalam tubuh manusia melalui makanan dan air tanah. Paparan zat beracun dalam
+            jangka panjang berpotensi menimbulkan gangguan kesehatan serius seperti
+            keracunan, gangguan organ, hingga penyakit kronis.
+        </p>
+
+        <h2>Solusi dan Ajakan</h2>
+        <p>
+            Untuk mencegah pencemaran tanah, diperlukan kerja sama antara pemerintah,
+            masyarakat, dan pelaku industri.
+        </p>
+
+        <!-- TAMBAHAN -->
+        <p>
+            Pengelolaan limbah yang baik, penggunaan bahan ramah lingkungan, serta pengurangan
+            penggunaan bahan kimia berbahaya merupakan langkah penting yang harus diterapkan.
+            Selain itu, edukasi dan sosialisasi mengenai pentingnya menjaga lingkungan
+            perlu terus ditingkatkan.
+        </p>
+
+        <p>
+            Mari kita mulai dari langkah kecil, seperti membuang sampah pada tempatnya,
+            memilah sampah organik dan anorganik, serta mengurangi penggunaan plastik sekali pakai.
+            Dengan kesadaran dan kepedulian bersama, pencemaran tanah dapat diminimalkan
+            demi menjaga kelestarian lingkungan dan masa depan generasi mendatang.
+        </p>
+
+        <a href="index.html" class="btn-back">⬅ Kembali ke Menu</a>
+    </div>
+</div>
+
+</body>
+</html>
